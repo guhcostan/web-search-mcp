@@ -1,6 +1,6 @@
 {
   "name": "@guhcostan/web-search-mcp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "MCP server to search the web and fetch page contents",
   "bin": {
