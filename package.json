@@ -27,6 +27,14 @@
     "access": "public"
   },
   "prepare": "npm run build",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guhcostan/web-search-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guhcostan/web-search-mcp/issues"
+  },
+  "homepage": "https://github.com/guhcostan/web-search-mcp#readme",
   "keywords": [
     "mcp",
     "modelcontextprotocol",
