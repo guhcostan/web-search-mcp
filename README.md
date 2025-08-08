@@ -41,6 +41,7 @@ Add to your Cursor MCP settings:
     "web-search-mcp": { "command": "web-search-mcp" }
   }
 }
+```
 
 Alternatively, without global install, use npx:
 
