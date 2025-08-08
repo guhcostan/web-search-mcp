@@ -1,0 +1,59 @@
+{
+  "name": "@guhcostan/web-search-mcp",
+  "version": "1.0.3",
+  "type": "module",
+  "description": "MCP server to search the web and fetch page contents",
+  "bin": {
+    "web-search-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "check": "tsc -p tsconfig.json --noEmit && eslint . && vitest run",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "prepare": "npm run build",
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "web",
+    "search",
+    "scrape"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "@mozilla/readability": "^0.6.0",
+    "dotenv": "^17.2.1",
+    "jsdom": "^26.1.0",
+    "undici": "^7.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^24.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
