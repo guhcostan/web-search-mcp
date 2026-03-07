@@ -1,5 +1,8 @@
 ## Web Search MCP
 
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub_Sponsors-ea4aaa?style=flat&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/guhcostan)
+
+
 Minimal MCP server that can search the web and extract readable page content, similar to Cursor's built-in web context.
 
 ### Features
