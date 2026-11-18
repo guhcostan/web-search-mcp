@@ -5,10 +5,16 @@ async function run(): Promise<void> {
   const serverCmd = 'npm'
   const serverArgs = ['start']
 
+  const env = Object.fromEntries(
+    Object.entries(process.env).filter(
+      (entry): entry is [string, string] => entry[1] !== undefined
+    )
+  )
+
   const transport = new StdioClientTransport({
     command: serverCmd,
     args: serverArgs,
-    env: process.env,
+    env,
     cwd: process.cwd()
   })
 

@@ -1,7 +1,6 @@
-## Web Search MCP
+# Web Search MCP
 
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub_Sponsors-ea4aaa?style=flat&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/guhcostan)
-
 
 Minimal MCP server that can search the web and extract readable page content, similar to Cursor's built-in web context.
 
@@ -12,7 +11,7 @@ Minimal MCP server that can search the web and extract readable page content, si
 
 ### Requirements
 
-- Node.js 20+ (recommended: 20.18.1+)
+- Node.js 20+
 
 ### Install
 
@@ -65,7 +64,7 @@ Alternatively, without global install, use npx:
   - input:
     - `query` (string, required)
     - `limit` (number, optional, 1–10, default 5)
-  - output: array of `{ url: string; title?: string; snippet?: string }`
+  - output: array of `{ url: string; title?: string }`
 
 - **fetch_page**
   - input:
@@ -86,6 +85,8 @@ Run individually:
 npm run build
 npm run lint
 npm test
+npm run smoke
+npm run clean
 ```
 
 ### Notes
